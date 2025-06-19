@@ -1,4 +1,8 @@
+provider "aws" {
+  region = "eu-north-1"
+}
+
 resource "aws_s3_bucket" "mybucket" {
-   bucket = "bucketrahul12348"
-   acl    = "private"
+  bucket = "rahul-jenkins-terraform-demo"
+  acl    = "private"
 }
